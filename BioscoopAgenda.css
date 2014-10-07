@@ -1,111 +1,40 @@
-.imgcontainer {
-    position: absolute;
-    z-index: 101;
-}
-.menuicon {
-    width: 60px;
-    margin-top: -10px;
-}
-.logo {
-    width: 220px;
-    position: fixed;
-    z-index: 102;
-    margin-top: -45px;
-}
-.topmenu {
-    display: inline-block;
-    margin-right: 3%;
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    font-weight: bold;
-    
-}
-.topmenu:hover {
-    font-weight: bold;
-    color: red;
-}
-#active {
-    color: red;
-    background-color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 13px;
-}
-#topmenu {
-    position: fixed;
-    width: 100%;
-    margin-left: -2%;
-    text-align: center;
-    padding: 1%;
-    height: 4%;
-    margin-top: -1%;
-    z-index: 100;
-}
-#opacity {
-    position: fixed;
-    width: 100%;
-    margin-left: -2%;
-    text-align: center;
-    padding: 1%;
-    height: 4%;
-    margin-top: -1%;
-    background-color: #cc1a1a;
-    opacity: 0.9;
-    z-index: 99;
-}
-body {
-    background-color: #D4D4D4;
-    font-family: Verdana;
-}
-.nolink {
-    text-decoration: none;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 13px;
-}
-.nolink:hover {
-    color: red;
-    background-color: white;
-}
+
 td {
     max-width: 400px;
 }
 body {
     margin: 0;
-        padding: 0;
-        height: 100%;
+    padding: 0;
+    height: 100%;
 }
 .imgwidth {
-    max-width: 200px;
+    width: 200px;
     display: block;
-    
+
 }
 .actueel {
     display: inline-block;
-    padding-right: 20px;
+    margin-left: 24px;
+
 }
 #actueeltext {
-    color: rgba(220, 0, 0, 0.75);
-    font-size: 60px;
-    margin-top: 100px;
+    color: white;
+    font-size: 40px;
+    margin-top: 190px;
     position: absolute;
-    margin-left: 60px;
+    margin-left: 860px;
 }
 
-figure {
+.filmfig {
     display: block;
     position: relative;
     overflow: hidden;
     width: 200px;
-
+    margin-left: 30px;
 }
-figcaption {
+.filmfigcap {
     position: absolute;
-    background: rgba(220, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.50);
     color: white;
     padding: 10px 20px;
     height: 279px;
@@ -113,11 +42,11 @@ figcaption {
     bottom: 0;
     width: 200px;
     left: -30%;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
-figure:hover figcaption {
+.filmfig:hover .filmfigcap {
     opacity: 1;
     left: 0;
     width: 200px;
@@ -132,21 +61,25 @@ imgwidth2 {
 }
 .titletext {
     font-size: 20px;
-    
+
 }
 .imgactueel {
-    width: 100%;
+    width: 1800px;
     height: 400px;
     position: absolute;
-    background-color: white;
-    margin-top: 200px;
+    background-color: #cc4144;
+    margin-top: 180px;
+    margin-left: 45px;
+    border-radius: 10px;
 }
 .imgvanvol{
-    width: 100%;
+    width: 1800px;
     height: 400px;
     position: absolute;
-    background-color: white;
-    margin-top: 740px;
+    background-color: #cc4144;
+    margin-top: 720px;
+    margin-left: 45px;
+    border-radius: 10px;
 }
 .reserveer {
     position: absolute;
@@ -160,9 +93,6 @@ imgwidth2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 12px;
-}
-.reserveer:hover {
-
 }
 .details {
     position: absolute;
@@ -178,69 +108,211 @@ imgwidth2 {
     font-size: 12px;
 }
 .vanVol {
-    color: rgba(220, 0, 0, 0.75);
-    font-size: 60px;
-    margin-left: 30px;
+    color: white;
+    font-size: 2vw;
+    margin-left: 36%;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 9%;
 }
 .volgendelijst {
     position: absolute;
     margin-top: 780px;
 }
 .vanma {
-    color: rgba(220, 0, 0, 0.75);
-    font-size: 60px;
-    margin-left: 60px;
+    color: white;
+    font-size: 2vw;
+    margin-left: 37%;
     position: absolute;
-    margin-top: 1170px;
+    margin-top: 67%;
 }
 .volmaand {
     position: absolute;
     margin-top: 1330px;
 }
 .imgvolma {
-    width: 100%;
+    width: 91%;
     height: 400px;
     position: absolute;
-    background-color: white;
-    margin-top: 1290px;
+    background-color: #cc4144;
+    margin-top: 67%;
+    margin-left: 4%;
+    border-radius: 1em;
 }
-/* popup */
-#cover { 
-    position:fixed; 
-    top:0; 
-    left:0; 
-    background:rgba(0,0,0,0.6); 
-    z-index:5; width:100%; height:100%; 
-    display:none; 
-} 
-#loginScreen { 
-    height:380px; 
-    width:340px; 
-    margin:0 auto; 
-    position:relative; 
-    z-index:10; 
-    display:none; 
-    background: url(login.png) no-repeat; 
-    border:5px solid #cccccc; 
-    border-radius:10px; 
-} 
-#loginScreen:target, #loginScreen:target + #cover { 
-    display:block; 
-    opacity:2; 
-} 
-.cancel { 
-    display:block; 
-    position:absolute; 
-    top:3px; 
-    right:2px; 
-    background:rgb(245,245,245); 
-    color:black; 
-    height:30px; 
-    width:35px; 
-    font-size:30px; 
-    text-decoration:none; 
-    text-align:center; 
-    font-weight:bold; 
+img {
+    max-width: 100%;
+}
+/* top menu bar */
+.imgcontainer {
+    position: fixed;
+    width: 40%;
+    z-index: 105;
+}
+
+.logo {
+    width: 230px;
+    position: absolute;
+    margin-top: -59px;
+    margin-left: 40px;
+    display: fixed;
+}
+.topmenu {
+    display: inline-block;
+    margin-right: 4px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;  
+}
+#active {
+    color: red;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+#topmenu {
+    position: fixed;
+    width: 100%;
+    margin-left: 4px;
+    text-align: center;
+    padding: 3px;
+    height: 5px;
+    z-index: 100;
+}
+#opacity {
+    position: fixed;
+    width: 100%;
+    margin-left: -2px;
+    text-align: center;
+    padding: 1px;
+    height: 60px;
+    background-color: #cc4144;
+    opacity: 0.9;
+    z-index: 99;
+}
+body {
+    background-color: black;
+    font-family: Verdana;
+}
+.nolink {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding-top:40px;
+}
+.menufig {
+    margin-top: -20px;
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    display: block;
+    width: 68px;
+}
+.menufigc {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0); 
+    color: white;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    top: 40px;
+    text-align: center;
+    -webkit-transition: all 0.8s ease;
+
+}
+.menufig:hover .menufigc {
+    opacity: 1;
+    top: 40px;
+}
+.menubutton{
+    width: 70px;
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media screen and (max-width: 640px){
+    body {
+        margin: 0;
+        height: 100%;
+    }
+    /*    topmenubar*/
+    .menubutton {
+        max-width: 60px;
+    }
+    .menufig {
+        margin-left: -23px;
+    }
+    .menufigc {
+        opacity: 1;
+        position: absolute;
+    }
+    #topmenu1 {
+        position: absolute;
+        margin-left: 3px;
+    }
+    #opacity{
+        height: 80px;
+    }
+    .logo {
+        display: none;
+    }
+    /*    eindetopmenubar*/
+    #actueeltext {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-top: 110px;
+        margin-left: 150px;
+        font-size: 1.5em;
+    }
+    .imgactueel {
+        width: 395px;
+        margin-left: -1px;
+        margin-left: 10px;
+        margin-top: -1px;
+        margin-top: 100px;
+    }
+    .imgvanvol {
+        margin-top: 550px;
+        width: 395px;
+        margin-left: -1px;
+        margin-left: 10px;
+    }
+    .vanVol {
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-left: 20px;
+        font-size: 1.5em;
+    }
+    .volgendelijst {
+        margin-top: 0px;
+        margin-top: 600px;
+    }
+    .imgvolma {
+        width: 395px;
+        margin-left: -1px;
+        margin-left: 10px;
+        margin-top: -1px;
+        margin-top: 1000px;
+    }
+    .vanma {
+        margin-top: 1010px;
+        margin-left: 50px;
+        font-size: 1.5em;
+    }
+    .volmaand {
+        margin-top: 1050px;
+    }
+    .filmfig {
+        width: 90px;
+        height: 150px;
+        margin-left: -33px;
+    }
+    .hoverE {
+        margin-top: 0px;
+        margin-top: 150px;
+    }
+    .filmfigcap {
+        display: none;
+    }
 }
